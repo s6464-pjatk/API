@@ -1,4 +1,6 @@
 
+using API.Data;
+
 namespace API
 {
     public class Program
@@ -25,6 +27,7 @@ namespace API
 
             app.UseAuthorization();
 
+            TrainingCenterData.Initialize();
 
             app.MapControllers();
 
